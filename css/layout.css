@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+main{
+  overflow: hidden;
+}
+
+#intro{
+  position: relative;
+  height: 1000px;
+  background: radial-gradient(rgb(223, 249, 243),rgb(126, 190, 168));
+}
+
+#publishing{
+  height: 1000px;
+  /* background: linear-gradient(#f7f1ea,#eccec1); */
+  position: relative;
+  overflow: hidden;
+}
+
+#work{
+  height: 1000px;
+  position: relative;
+}
+
+#profile{
+  height: 1000px;
+  /* background-color: rgb(255, 161, 161); */
+  background-color: rgb(239, 248, 254);
+  position: relative;
+}
+
+#contact{
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+footer{
+  height: 50px;
+  background: rgb(126, 190, 168);
+}
+
+address{
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+}

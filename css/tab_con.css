@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+#tab_con{
+  width: 1200px;
+  height: 600px;
+  font-family: 'Noto Sans KR', 'Montserrat', sans-serif;
+  margin-top: 150px;
+  /* background-color: #00f; */
+  position: relative;
+  margin: 0px auto;
+  padding-top:80px;
+  z-index: 999;
+}
+
+#tab_con ul{
+  display: flex;
+}
+
+#tab_con ul > li{
+  width: 25%; height: 40px;
+  text-align: center;
+}
+
+#tab_con ul > li > .tab_btn{
+  display: block;
+  line-height: 40px;
+  font-size: 16px;
+  background: rgb(249, 202, 156);
+}
+
+.t_on{
+  background: rgb(244, 165, 132) !important;
+  color: #fff !important;
+}
+
+#tab_con ul .con{
+  height: 560px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px; left: 0px;
+  display: none;
+}
+
+
+
+.clear{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.con{
+  overflow: hidden;
+  position: relative;
+}
+
+.con img{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 555; 
+}
+
+.con img{
+  height: 80%;
+}
+
+.con4 img{
+  left: 5px !important;
+}
+
+.con a{
+  display: block;
+  position: absolute;
+  bottom: 135px; 
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 10px;
+  background-color: rgb(244, 165, 132);
+  border-radius: 20px;
+  width: 100px;
+}
+
+
+.con a:hover, .c01 a:hover{
+  color: rgb(244, 165, 132) !important;
+  background-color: #fff !important;
+  border: 1px solid rgb(244, 165, 132) !important;
+}
+
+.con a:first-of-type{
+  left: 100px;
+}
+.con a:last-of-type{
+  right: 100px;
+}
+.c01_left, .c02_left, .c03_left, .c04_left{
+  width: 60%; height: 560px;
+  position: absolute;
+  left:0px;
+}
+
+.c01_right, .c02_right, .c03_right, .c04_right{
+  width: 40%; height: 560px;
+  position: absolute;
+  right: 0px;
+  text-align: left;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.con dl{
+  padding-top: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  font-family: 'Montserrat', 'Noto Sans KR'; 
+}
+.con dl dt{
+  display: inline-block;
+  width: 120px;
+  padding-right: 20px;
+  /* background-color: #ccc; */
+
+}
+.con dd{
+  width: 340px;
+  float: right;
+  padding-top: 15px;
+  font-size: 17px !important;
+  line-height: 20px !important;
+}
+
+
+
