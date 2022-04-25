@@ -6,65 +6,97 @@
 
 .work_g{
   background-color: rgb(29, 29, 29);
-  width: 1000px; height: 600px;
+  width: 1500px; height: 600px;
   margin: 0px auto;
   margin-top: 80px;
-  padding: 10px;
-  grid-gap: 10px;
-  box-sizing:border-box;
-  display: grid;
-  overflow:hidden;
-  grid-template-areas:
-    "gogung gogung disney"
-    "mickey pattern pattern"
-    "mickey uiux fiar";
+  position: relative;
 }
 
 .work_g > li{
   transition: 1s;
   overflow:hidden;
   opacity: 0.2;
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor:pointer;
 }
 
 .work_g > li:hover{
   opacity: 1;
 }
 
-.work_g > li img{
-  object-fit: cover;
+.work_g li:first-child{
+  position: absolute;
+  background: #f00;
+  top: 20px; left: 340px;
+  width: 760px; height: 180px;
+  overflow: hidden;
+}
+.work_g li:first-child img{
   width: 100%;
-  /* display:none; */
+  transform: translatey(-177px);
 }
 
-.work_g > li:first-child img{
-  transform: translateY(-120px);
+.work_g li:nth-child(2){
+  position: absolute;
+  background: #ff0;
+  height: 180px; width: 360px;
+  right: 20px; top: 20px;
+  overflow: hidden;
 }
-.work_g > li:nth-child(3) img{
+.work_g li:nth-child(2) img{
+  height: 100%; width: 100%;
+}
+.work_g li:nth-child(3){
+  position:absolute;
+  background: #ff0;
+  height: 560px; width: 300px;
+  top: 20px; left: 20px;
+  overflow: hidden;
+}
+.work_g li:nth-child(3) img{
   height: 100%;
+  transform: translateX(-50px);
 }
 
-.work_g > li:nth-child(4) img{
-  width: 300%;
-  transform: translate(-70px, -118px);
+.work_g li:nth-child(4){
+  position: absolute;
+  background: #ff0;
+  height: 160px; width: 560px;
+  bottom: 20px; left: 340px;
+  overflow: hidden;
 }
 
-.work_g > li:nth-child(5) img{
-  width: 200%;
-  transform: translate(-110px, -105px);
+.work_g li:nth-child(4) img{
+  width: 100%;
+  transform: translateY(-10px);
 }
 
-.work_g > li:last-child img{
-  height: 150%;
-  transform: translateY(-34px);
+
+.work_g li:nth-child(5){
+  position: absolute;
+  background: #ff0;
+  height: 180px;
+  width: 1140px;
+  right: 20px;
+  top: 220px;
 }
 
-.item01{grid-area:gogung;}
-.item02{grid-area:disney;}
-.item03{grid-area:mickey;}
-.item04{grid-area:uiux}
-.item05{grid-area:pattern;}
-.item06{grid-area:fiar;}
+.work_g li:nth-child(5) img{
+  width: 100%;
+  transform: translateY(-85px);
+}
+
+.work_g li:last-child{
+  position: absolute;
+  background: #ff0;
+  height: 160px; width: 560px;
+  bottom: 20px; right: 20px;
+}
+
+.work_g li:last-child img{
+  width: 100%;
+  transform: translateY(-55px);
+}
 
 
 /* 모달창서식 */
@@ -72,31 +104,36 @@
 .modal{
   display: none;
   width: 100%; height: 100%;
-  position: absolute; 
+  position: fixed; 
   top: 0px; left: 0px;
   background-color: rgba(0,0,0,.5);
-  z-index: 5555;
+  z-index: 555555;
 }
 
-.modal_box{
+.m_box{
   position: absolute;
   top:50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px; height: 800px;
+  width: 1500px; height: 800px;
   text-align: center;
+  overflow: hidden;
 }
 
-.modal_box img{
-  max-width: 600px; max-height: 800px;
-  z-index: 55555;
+.m_box img{
+  max-width: 1200px; max-height: 800px;
+  position: absolute;
+  top:50%; left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
 .modal i.fas{
   display: block;
-  padding: 5px;
+  padding: 10px;
   position: absolute;
-  top: 150px;
-  right: 200px;
+  top: 50px;
+  right: 10px;
   color: #fff;
   font-size: 35px;
+  cursor: pointer;
 }

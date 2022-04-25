@@ -1,24 +1,22 @@
 @charset "utf-8";
 
 
-.color01{}
-.color02{}
-.color03{}
+.color01{color: #ffcb00;}
+.color02{color: #e0b506;}
+.color03{color: #333;}
 
 .color04{color: #980000;}
-.color05{}
 .color06{color: #f1ea34;}
 
 .color07{color: #5bc2ac;}
-.color08{
+.color05, .color08, .color10{
   color: #fff;
   border: 1px solid #ccc;
 }
 .color09{color: #499684;}
 
-.color10{}
-.color11{}
-.color12{}
+.color11{color: #333;}
+.color12{color: #F04A4F;}
 
 /* -------------------------------intro 영역------------------------------- */
 #intro {
@@ -80,8 +78,11 @@
   bottom: -356px;
 }
 
+
 /* -------------------- work gallery 영역----------------------------- */
 
+
+#work {position: relative;}
 #work > h3 {
   padding-top: 135px;
 } 

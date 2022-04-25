@@ -2,25 +2,24 @@
 $(function(){
 
   $(".work_g li").click(function(){
-    $(".modal").show();
+    $(".modal").fadeIn();
+    
+    var imgsrc = $(this).children("img").attr("src");
+    var imgalt = $(this).children("img").attr("alt");
 
-    let modal=`
-    <div class="modal">
-    <i class="fas fa-times"></i>
-      <div class="m_box">
-        <img src="" alt="">
-      </div>
-    </div>`
+    $(".m_box img").attr("src", imgsrc);
+    $(".m_box img").attr("alt", imgalt);
 
-    const img_src = $(this).find("img").attr("src");
-    const img_alt = $(this).find("img").attr("alt");
-
-    $(".m_box img").attr("src",img_src);
-    $(".m_box img").attr("alt",img_alt);
   });
-
-  $(".modal i.fas").click(function(){
+  $(".modal i.fas.fa-times").click(function(){
     $(".modal").fadeOut();
     return false;
   });
+  $(".modal").click(function(e){
+    if(e.target.className !="modal"){
+      return false;}else{
+        $(".modal").fadeOut();
+      }
+  });
 });
+
