@@ -27,9 +27,9 @@
 }
 #intro img{
   position: absolute;
-  top: 270px; left: 50%;
-  transform: translateX(-50%);
-  z-index:10;
+  width: 1000px;
+  top: 45%; left: 50%;
+  transform: translate(-50%, -50%);
 }
 #intro i{
   color: #fff;
