@@ -56,5 +56,32 @@ $(function(){
       });
     }
   });
+
+  const modal01 = '<div class="intro_modal"><div class="intro_m_box"><img src="./img/intro_modal.jpg" alt="모달창"><p><label for="ch">오늘 하루 열지않음</label><a href="#" title="닫기" class="c_btn">닫기</a></p></div></div>'
+
+  //body태그 안쪽의 맨 뒤에 내용을 추가한다.
+  $('body').append(modal01);
+
+
+  //쿠키
+  const $ex = $('#ch') //체크박스를 변수에 담는다.
+
+  //1. 만약에 쿠키가 현재 브라우저에 존재한다면 모달을 나오지 않게 숨긴다.
+  if($.cookie('popup')=='none'){
+  $('.intro_modal').hide();
+  }
+
+  //2.사용자가 오늘 하루 열지 않음 버튼을 클릭하면 popup 함수를 호출하여 쿠키를 생성
+  $('.intro_modal label').click(function(){
+  $.cookie('popup', 'none', {expires:1, path:'/'});
+  $('.intro_modal').hide();
+  });
+
+  //3. 닫기 버튼을 클릭하면 모달 숨기기
+  $('.intro_modal a').click(function(){
+  $('.intro_modal').hide();
+  return false;
+  });
+
   
 });
