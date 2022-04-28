@@ -14,10 +14,13 @@
 
 #tab_con ul{
   display: flex;
+  justify-content: center;
+  padding-left: 70px;
 }
 
 #tab_con ul > li{
-  width: 25%; height: 40px;
+  width: 20%;
+  height: 40px;
   text-align: center;
 }
 
@@ -25,11 +28,14 @@
   display: block;
   line-height: 40px;
   font-size: 16px;
-  background: rgb(249, 202, 156);
+  background: #7ebea8;
+  color: #fff;
+  border-radius: 50px;
+  width: 150px;
 }
 
 .t_on{
-  background: rgb(244, 165, 132) !important;
+  background: rgb(54 54 53) !important;
   color: #fff !important;
 }
 
@@ -37,7 +43,7 @@
   height: 560px;
   position: absolute;
   width: 100%;
-  bottom: 0px; left: 0px;
+  bottom: -42px; left: 0px;
   display: none;
 }
 
@@ -74,21 +80,21 @@
   display: block;
   position: absolute;
   bottom: 135px; 
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   padding: 8px 10px;
-  background-color: rgb(244, 165, 132);
+  background-color: rgb(54 54 53);
   border-radius: 20px;
   width: 100px;
 }
 
 
 .con a:hover, .c01 a:hover{
-  color: rgb(244, 165, 132) !important;
+  color: rgb(54 54 53) !important;
   background-color: #fff !important;
-  border: 1px solid rgb(244, 165, 132) !important;
+  border: 1px solid rgb(54 54 53) !important;
 }
 
 .con a:first-of-type{
